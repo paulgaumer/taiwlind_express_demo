@@ -1,0 +1,20 @@
+{
+  "name": "tailwind_tech-lunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js --ext html",
+    "tailwind": "postcss tailwind.css -o ./public/styles.css -w --verbose",
+    "build": "NODE_ENV=production postcss tailwind.css -o ./public/styles.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "nodemon": "^2.0.12",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
